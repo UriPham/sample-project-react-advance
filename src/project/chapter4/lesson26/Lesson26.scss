@@ -1,0 +1,23 @@
+.list-users {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+
+    .detail-user {
+        border: 1px dashed red;
+        padding: 10px;
+        border-radius: 5px;
+        min-width: 260px;
+
+        .image-user {
+            display: flex;
+            justify-content: center;
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        
+    }
+}
+

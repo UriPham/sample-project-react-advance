@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import User from "./User";
 import { getUserWithPaginate } from "../../utils/apiService";
 
 /**
@@ -16,9 +17,18 @@ const Homework26 = (props) => {
      * Có thêm option để show/hide hình ảnh tại mỗi user
      * Tự CSS để có 1 giao diện 'tương đối' và dễ nhìn ^^
      */
+    useEffect(() => {
+        fetchListUsersWithPaginate()
+    }, [])
+    
+    const fetchListUsersWithPaginate = async () => {
+        let res = await getUserWithPaginate(1, 3)
+        console.log(res)
+    }
+
     return (
         <div>
-
+            {/* <User/> */}
         </div>
     )
 }

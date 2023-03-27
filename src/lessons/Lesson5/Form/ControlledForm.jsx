@@ -18,11 +18,11 @@ const ControlForm = (props) => {
         console.log(">>> check form data: ", form);
     }
 
-    console.log(">>> render ControlledForm")
+    console.log(">>> render UnControlledForm")
     return (
         <fieldset>
             <legend>Control Form</legend>
-            <label>First name:</label>
+            <label >First name:</label>
             <input
                 type="text" name="fname" value={form['fname']}
                 onChange={handleOnChange} />
