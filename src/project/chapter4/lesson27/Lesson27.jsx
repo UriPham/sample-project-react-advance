@@ -22,7 +22,7 @@ const Lesson27 = (props) => {
   const addNew = (user) => {
     setListUsers([user, ...listUsers])
   };
-  
+
   return (
     <div className="users-container">
       <AddNewUser addNew={addNew} />

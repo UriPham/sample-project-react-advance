@@ -35,7 +35,7 @@ const Login = (props) => {
 
     return (
         <div className="login">
-            <form onSubmit={handleOnSubmit}>
+            <form onSubmit={handleOnSubmit} style={{ display: 'flex'}}>
                 <div className="input-group">
                     <label>Email</label>
                     <input type={'text'} value={email} onChange={(e) => setEmail(e.target.value)} />
